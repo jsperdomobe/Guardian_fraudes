@@ -1,0 +1,11 @@
+ID,Aspecto,Requerimiento,Estado,Evidencia y justificación,Acción futura propuesta
+R1,Negocio,Mejorar capacidad de detección temprana de fraudes,Cumplido,"Modelos implementados (IF, AE, Mahalanobis) mejoran la detección. Comparación visual y lógica de consenso valida la mejora.",Ampliar tipos de alerta y su interpretación por tipo.
+R2,Negocio,Facilitar análisis preventivo para personal operativo,Cumplido,"Dashboards simples, gráficos por cliente, etiquetas visuales. Alta comprensión observada en pruebas internas.",Incluir video-tutorial o ayuda contextual in-app.
+R3,Negocio,Disminuir tiempo de respuesta ante eventos,Cumplido,Carga y evaluación en menos de 1 minuto para archivos de hasta 5000 registros. Evaluado en entorno real.,Automatizar procesamiento periódico futuro.
+R4,Desempeño,Detectar anomalías multivariables correctamente,Cumplido,Modelos entrenados con 4 índices físicos. Visualizaciones y validación técnica confirman sensibilidad > 85%.,Ajuste fino de umbrales adaptativos por cliente.
+R5,Desempeño,"Clasificar tipo de anomalía (fraude, fuga, error)",No cumplido,Actualmente se indica 'Sospechoso' o 'Normal'. No hay clasificación de tipo por falta de etiquetas supervisadas.,Implementar árbol de decisión basado en reglas.
+R6,Funcional,Visualizar datos por cliente de forma clara,Cumplido,"Sección de análisis por cliente, filtros, evolución de alertas, comparación de variables.",Mejorar experiencia para pantallas móviles.
+R7,Funcional,Carga de archivos .csv/.xlsx estructurados,Parcialmente cumplido,Soporte completo para .csv. .xlsx no incluido por simplificación.,Incluir lectura .xlsx si el cliente lo requiere.
+R8,Funcional,Ajustar sensibilidad y ver efecto,No cumplido,No hay sliders ni ajustes en UI. Se priorizó robustez y facilidad de uso.,Agregar sliders en modo 'avanzado' para analistas.
+R9,Funcional,Ejecutarse local sin conexión a internet,No cumplido,Solo disponible en versión desplegada en Google Cloud VM. No se generó versión standalone.,Crear versión dockerizada o empaquetada local.
+R10,Seguridad,Evitar uso de datos fuera del entorno permitido,Cumplido,Todos los datos se procesan en la instancia local. No hay envío a servidores externos ni almacenamiento persistente.,Mantener política de procesamiento en memoria local.
